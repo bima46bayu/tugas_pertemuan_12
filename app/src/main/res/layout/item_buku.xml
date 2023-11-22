@@ -28,28 +28,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/penulisTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:id="@+id/genreTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textSize="16sp"/>
+            android:textStyle="bold"
+            android:text="Nama"/>
 
         <TextView
             android:id="@+id/hargaTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:text="Harga"/>
+
+        <TextView
+            android:id="@+id/genreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="Kategori"/>
+
+        <TextView
+            android:id="@+id/penulisTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="Deskripsi"/>
         </LinearLayout>
 
 
@@ -67,14 +71,14 @@
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/itemBtEdit"
-                        android:layout_width="40sp"
-                        android:layout_height="40sp"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
                         android:layout_marginRight="8dp"
                         android:background="@drawable/baseline_edit_24"/>
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/itemBtDelete"
-                        android:layout_width="40sp"
-                        android:layout_height="40sp"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
                         android:background="@drawable/baseline_delete_24"/>
                 </LinearLayout>
             </RelativeLayout>

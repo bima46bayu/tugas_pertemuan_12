@@ -26,22 +26,29 @@
         android:id="@+id/login_et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="email"/>
+        android:hint="email"
+        android:background="@drawable/bg_description"
+        android:padding="12dp"/>
 
     <EditText
+        android:layout_marginTop="20dp"
         android:id="@+id/login_et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="password"/>
+        android:hint="password"
+        android:background="@drawable/bg_description"
+        android:padding="12dp"/>
 
-    <Button
-
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="40dp"
         android:id="@+id/login_bt_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textAllCaps="false"/>
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button"/>
 
     <TextView
         android:layout_marginTop="16dp"
@@ -50,6 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Signup"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:textSize="16sp"/>
     </LinearLayout>
 </RelativeLayout>

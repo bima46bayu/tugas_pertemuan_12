@@ -4,19 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tugas.homepage.HomePageActivity">
+    tools:context=".tugas.homepage.HomePageActivity"
+    android:background="#2527A0B0">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="16dp">
-    <TextView
-        android:id="@+id/homepageTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Buku"
-        android:textSize="40dp"
-        />
+
+        <RelativeLayout
+            android:id="@+id/homepageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_add_shopping_cart_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOKOPAKEDI"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+        </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="20sp"
@@ -37,7 +53,7 @@
         android:layout_marginTop="16dp"
         app:tint="@color/white"
         app:srcCompat="@drawable/baseline_add_24"
-        android:backgroundTint="@color/black">
+        android:backgroundTint="#9500FF">
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
     </RelativeLayout>
 </RelativeLayout>

@@ -45,9 +45,9 @@ class BukuAdapter : RecyclerView.Adapter<BukuAdapter.BukuViewHolder>() {
 
         val currentBuku = bukus[position]
         holder.textViewBuku.text = currentBuku.buku
-        holder.textViewPenulis.text = "Ditulis oleh : " + currentBuku.penulis
         holder.textViewGenre.text = currentBuku.genre
         holder.textViewHarga.text = "Rp " + currentBuku.harga.toString()
+        holder.textViewPenulis.text = "Deskripsi : " + currentBuku.penulis
 
         holder.btEdit.setOnClickListener{
             Toast.makeText(holder.itemView.context, currentBuku.id.toString(), Toast.LENGTH_SHORT).show()

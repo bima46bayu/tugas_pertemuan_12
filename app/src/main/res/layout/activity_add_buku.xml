@@ -4,58 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="0dp"
     android:orientation="vertical"
-    tools:context=".tugas.addbuku.AddBukuActivity">
+    tools:context=".tugas.addbuku.AddBukuActivity"
+    android:background="#2527A0B0">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="16dp">
+        android:layout_margin="24dp">
 
-    <TextView
-        android:id="@+id/homepageTitle"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tambah Buku"
-        android:textSize="40dp"
-        />
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_add_shopping_cart_24" />
+
+        <TextView
+            android:id="@+id/homepageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah Barang"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
 
     <EditText
         android:id="@+id/addETBuku"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nama Buku"/>
-
-    <EditText
-        android:id="@+id/addETPenulis"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Penulis"/>
-
-    <EditText
-        android:id="@+id/addETGenre"
-        android:layout_marginTop="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Genre"/>
+        android:layout_height="50dp"
+        android:hint="Nama Barang"
+        android:padding="12dp"
+        android:background="@drawable/bg_description"/>
 
     <EditText
         android:id="@+id/addETHarga"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Harga"/>
+        android:hint="Harga"
+        android:padding="12dp"
+        android:background="@drawable/bg_description"/>
 
-    <Button
+    <EditText
+        android:id="@+id/addETGenre"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kategori"
+        android:padding="12dp"
+        android:background="@drawable/bg_description"/>
+
+    <EditText
+        android:id="@+id/addETPenulis"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi"
+        android:padding="12dp"
+        android:background="@drawable/bg_description"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="30dp"
         android:id="@+id/addBTTambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tambah"
-        android:textAllCaps="false"/>
+        android:text="TAMBAH"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button"/>
     </LinearLayout>
 </LinearLayout>
